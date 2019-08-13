@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 u1 = Airplane.create :name => 'Freddie', :rows => 1 , :columns => 1
 
 u2 = Airplane.create :name => 'Garry', :rows => 2, :columns => 3
