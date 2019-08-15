@@ -30,8 +30,21 @@ f2 = Flight.create :flight_number => 'EK456', :origin => 'BKK', :destination => 
 
 f3 = Flight.create :flight_number => 'EK457', :origin => 'DUB', :destination => 'SFO', :departure_date => '2019-09-21', :airplane_id => a2.id
 
-f4 = Flight.create :flight_number => 'TH457', :origin => 'SYD', :destination => 'MEL', :departure_date => '2019-08-30', :airplane_id => a3.id
-puts "Flights data success"
+f4 = Flight.create :flight_number => 'FF37', :origin => 'SYD', :destination => 'BHH', :departure_date => '2019-08-13', :airplane_id => a3.id
+
+f5 = Flight.create :flight_number => 'TH457', :origin => 'DAB', :destination => 'BHH', :departure_date => '2019-08-13', :airplane_id => a3.id
+
+f6 = Flight.create :flight_number => 'TH457', :origin => 'DAB', :destination => 'MEL', :departure_date => '2019-08-14', :airplane_id => a3.id
+
+f7 = Flight.create :flight_number => 'TH457', :origin => 'DAB', :destination => 'MEL', :departure_date => '2019-08-11', :airplane_id => a3.id
+
+f8 = Flight.create :flight_number => 'TH457', :origin => 'DAB', :destination => 'MEL', :departure_date => '2019-08-12', :airplane_id => a3.id
+
+f9 = Flight.create :flight_number => 'TH457', :origin => 'DAB', :destination => 'MEL', :departure_date => '2019-08-15', :airplane_id => a3.id
+
+f10 = Flight.create :flight_number => 'TH457', :origin => 'DAB', :destination => 'MEL', :departure_date => '2019-08-16', :airplane_id => a3.id
+
+
 
 Reservation.destroy_all
 r1 = Reservation.create :flight_id => f1.id, :reservation_date => '2019-08-02', :user_id => u1.id, :seat_number => '3A'
